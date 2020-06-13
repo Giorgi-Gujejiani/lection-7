@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 110px;
+    width: 800px;
+}
+h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    top: 400px;position: absolute;
+    background-color: green;
+    left: 500px;
+}
+
+body {
+    background-image: url("Doge-with-a-gun.jpg");
+    background-repeat: no-repeat;
+    background-size: cover 800px;
+    
+}
+
+.box {
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    font-size: 16px;
+    transition: background-color .5s ease transform .3s;
+    transition-duration: 1s;
+    animation-name: bezimeni;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    
+}
+
+@keyframes bezimeni {
+    0%   {background-color:blue; left:0px; top:0px;}
+    25%  {background-color:yellow; left:500px; top:0px;}
+    50%  {background-color:blue; left:1000px;}
+    75%  {background-color:yellow; left:50px; top:200px;}
+    100% {background-color:blue; left:0px; top:0px;}
+  }
+
+.box:hover {
+    background-color: red;
+    font-size: 32px;
+    cursor: pointer;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+}
+
+
+
+.rounded {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid black;
+    /* opacity: 1; */
+}

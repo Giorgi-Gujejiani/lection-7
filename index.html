@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<h1>
+    big brother is watching you
+</h1>
+<div class="box">
+
+</div>
+
+
+
+
+
+
+    
+
+
+    
+    
+    <script>
+    alert("ამ დავალებას 2 ქულით შეაფასებ ხომ??");
+    alert("გააყოლე მაუსი ბოქსს და ეცადე არ ჩამორჩე, შემდეგ რაც მოხდება გაგაოცებთ!");
+    document.body.onmousemove = function (e) {
+    // console.log('x კორდინატი:', e.clientX);
+    var circle = document.createElement('div');
+    circle.classList.add('rounded');
+    document.body.appendChild(circle);
+    var x = e.clientX;
+    var y = e.clientY;
+    circle.style.top = y + 'px'
+    circle.style.left = x + 'px';
+    circle.style.transition = "all .5s ease";
+    circle.style.width = 50 + 'px';
+    circle.style.height = 50 + 'px';
+    setTimeout(() => document.body.removeChild(circle), 1000);}
+    </script>
+    
+</body>
+
+</html>
